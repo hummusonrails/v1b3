@@ -25,8 +25,16 @@ export const VibeResult: React.FC<{ result: VibeAnalyzerResult }> = ({ result })
         onClick={composeCast}
         className="mt-2 px-5 py-3 rounded-xl font-bold text-base bg-gradient-to-r from-[#5e60ce] to-[#43e6fc] text-white shadow-lg hover:scale-105 transition-all duration-150"
       >
-        ComposeCast to Farcaster
+        Cast to Farcaster
       </button>
+      <a
+        href="https://farcaster.xyz/?launchFrameUrl=https%3A%2F%2Fv1b3dis.onrender.com%2F"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-3 inline-block px-5 py-3 rounded-xl font-bold text-base border border-[#43e6fc] text-[#43e6fc] bg-transparent hover:bg-[#43e6fc]/10 transition-all duration-150"
+      >
+        🔗 Find your wallet vibe
+      </a>
     </div>
   );
 };
