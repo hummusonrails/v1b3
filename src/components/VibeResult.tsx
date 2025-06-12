@@ -5,7 +5,8 @@ export const VibeResult: React.FC<{ result: VibeAnalyzerResult }> = ({ result })
   const { vibe } = result;
   const composeCast = () => {
   sdk.actions.composeCast({
-    text: `My Arbitrum VibeTrack today 🎵: ${vibe.tag} -> ${vibe.songTitle}\n${vibe.youtubeUrl}`,
+    text: `My Arbitrum VibeTrack today 🎵: ${vibe.tag} -> ${vibe.songTitle}\n${vibe.youtubeUrl}\nFind your wallet vibe: https://farcaster.xyz/?launchFrameUrl=https%3A%2F%2Fv1b3dis.onrender.com%2F`,
+
   });
 };
 
@@ -27,14 +28,6 @@ export const VibeResult: React.FC<{ result: VibeAnalyzerResult }> = ({ result })
       >
         Cast to Farcaster
       </button>
-      <a
-        href="https://farcaster.xyz/?launchFrameUrl=https%3A%2F%2Fv1b3dis.onrender.com%2F"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-3 inline-block px-5 py-3 rounded-xl font-bold text-base border border-[#43e6fc] text-[#43e6fc] bg-transparent hover:bg-[#43e6fc]/10 transition-all duration-150"
-      >
-        🔗 Find your wallet vibe
-      </a>
     </div>
   );
 };
