@@ -1,12 +1,20 @@
 {
-  "name": "VibeTrack",
-  "description": "Analyze your Arbitrum wallet's onchain vibe, get a theme song, and share it to Farcaster!",
-  "icon": "/splash.png",
-  "appUrl": "https://your-app-url.xyz",
-  "splashBackgroundImageUrl": "/splash.png",
-  "requiredCapabilities": [
-    "actions.composeCast",
-    "wallet.getEthereumProvider"
-  ]
+  "frame": {
+    "version": "1",
+    "name": "VibeTrack",
+    "iconUrl": "https://vibetrack.onrender.com/splash.png",
+    "homeUrl": "https://vibetrack.onrender.com/",
+    "splashImageUrl": "https://vibetrack.onrender.com/splash.png",
+    "splashBackgroundColor": "#181c34",
+    "subtitle": "Wallet vibes analyzer",
+    "description": "Analyze your Arbitrum wallet and get a theme song. Share your vibe to Farcaster.",
+    "primaryCategory": "utility",
+    "tags": ["arbitrum", "wallet", "vibes", "music", "farcaster"],
+    "requiredChains": ["eip155:42161"],
+    "requiredCapabilities": [
+      "actions.composeCast",
+      "wallet.getEthereumProvider"
+    ]
+  }
 }
 
