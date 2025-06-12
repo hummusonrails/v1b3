@@ -2,9 +2,9 @@
   "frame": {
     "version": "1",
     "name": "VibeTrack",
-    "iconUrl": "https://vibes.onrender.com/icon-1024.png",
-    "homeUrl": "https://vibes.onrender.com/",
-    "splashImageUrl": "https://vibes.onrender.com/splash.png",
+    "iconUrl": "https://v1b3dis.onrender.com/icon-1024.png",
+    "homeUrl": "https://v1b3dis.onrender.com/",
+    "splashImageUrl": "https://v1b3dis.onrender.com/splash.png",
     "splashBackgroundColor": "#181c34",
     "subtitle": "Wallet vibes analyzer",
     "description": "Analyze your Arbitrum wallet and get a theme song. Share your vibe to Farcaster.",
