@@ -1,0 +1,16 @@
+{
+  "name": "VibeTrack",
+  "short_name": "VibeTrack",
+  "description": "Analyze your Arbitrum wallet's onchain vibe, get a theme song, and share it to Farcaster!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#181c34",
+  "theme_color": "#5e60ce",
+  "icons": [
+    {
+      "src": "/splash.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ]
+}

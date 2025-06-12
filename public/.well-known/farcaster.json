@@ -1,0 +1,12 @@
+{
+  "name": "VibeTrack",
+  "description": "Analyze your Arbitrum wallet's onchain vibe, get a theme song, and share it to Farcaster!",
+  "icon": "/splash.png",
+  "appUrl": "https://your-app-url.xyz",
+  "splashBackgroundImageUrl": "/splash.png",
+  "requiredCapabilities": [
+    "actions.composeCast",
+    "wallet.getEthereumProvider"
+  ]
+}
+
