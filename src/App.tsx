@@ -57,46 +57,20 @@ function ConnectMenu() {
   const { connect, connectors, error, status } = useConnect();
   const [result, setResult] = useState<VibeAnalyzerResult | null>(null);
 
-  // Detect if running inside Warpcast/Farcaster
-  const isFarcaster = typeof window !== 'undefined' &&
-    (/warpcast/i.test(window.navigator.userAgent) || /farcaster/i.test(window.navigator.userAgent));
-
   if (!isConnected) {
-    if (isFarcaster) {
-      // Show a single connect button for Farcaster clients
-      return (
-        <div className="flex flex-col items-center gap-4 w-full">
-          <button
-            type="button"
-            disabled={status === 'pending' || !connectors.length}
-            onClick={() => connect({ connector: connectors[0] })}
-            className="px-6 py-3 rounded-xl font-bold text-base bg-gradient-to-r from-[#5e60ce] to-[#43e6fc] text-white shadow-lg hover:scale-105 transition-all duration-150 disabled:opacity-60 disabled:cursor-not-allowed"
-          >
-            {status === 'pending' ? 'Connecting...' : 'Connect'}
-          </button>
-          {error && <div className="text-red-400 font-semibold text-sm mt-2">{error.message}</div>}
-        </div>
-      );
-    } else {
-      // Show multi-wallet selection for browser/dev
-      return (
-        <div className="flex flex-col items-center gap-4 w-full">
-          <div className="flex flex-wrap justify-center gap-3">
-            {connectors.map((connector) => (
-              <button
-                disabled={status === 'pending'}
-                key={connector.id}
-                onClick={() => connect({ connector })}
-                className={`px-6 py-3 rounded-xl font-bold text-base bg-gradient-to-r from-[#5e60ce] to-[#43e6fc] text-white shadow-lg hover:scale-105 transition-all duration-150 disabled:opacity-60 disabled:cursor-not-allowed`}
-              >
-                {status === 'pending' ? `Connecting to ${connector.name}...` : `Connect with ${connector.name}`}
-              </button>
-            ))}
-          </div>
-          {error && <div className="text-red-400 font-semibold text-sm mt-2">{error.message}</div>}
-        </div>
-      );
-    }
+    return (
+      <div className="flex flex-col items-center gap-4 w-full">
+        <button
+          type="button"
+          disabled={status === 'pending' || !connectors.length}
+          onClick={() => connect({ connector: connectors[0] })}
+          className="px-6 py-3 rounded-xl font-bold text-base bg-gradient-to-r from-[#5e60ce] to-[#43e6fc] text-white shadow-lg hover:scale-105 transition-all duration-150 disabled:opacity-60 disabled:cursor-not-allowed"
+        >
+          {status === 'pending' ? 'Connecting...' : 'Connect'}
+        </button>
+        {error && <div className="text-red-400 font-semibold text-sm mt-2">{error.message}</div>}
+      </div>
+    );
   }
 
   return (
