@@ -15,6 +15,11 @@
       "actions.composeCast",
       "wallet.getEthereumProvider"
     ]
+  },
+  "accountAssociation": {
+    "header": "eyJmaWQiOjMyMzc5NywidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweEIzNDFmQTgxNTkzMkU3RTAyMWI5Njc5N2U4QzZGMmM0RjAzMTAwOUEifQ",
+    "payload": "eyJkb21haW4iOiJ2MWIzZGlzLm9ucmVuZGVyLmNvbSJ9",
+    "signature": "MHhkNDdhODA0ZTU1MDFjMTM1NThiZDBhZTFjNmE3ZTcyOTMwOTE0OTYyZmE4ZWIxODQ5NjQ5Y2I1MzEwODc5YTk4MjNiNTM1ZmVmNTRmMTg1YjI1NjdjM2VkYTI5NTU0YmFlZTA3NTU2ZjcyNDFiMjgwN2VhZTFhZGZjNzA0NDY3MTFi"
   }
 }
 
