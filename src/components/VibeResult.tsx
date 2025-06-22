@@ -5,7 +5,7 @@ export const VibeResult: React.FC<{ result: VibeAnalyzerResult }> = ({ result })
   const { vibe } = result;
   const composeCast = () => {
   sdk.actions.composeCast({
-    text: `My Arbitrum VibeTrack today 🎵: ${vibe.tag} -> ${vibe.songTitle}\n${vibe.youtubeUrl}\nFind your wallet vibe: https://farcaster.xyz/?launchFrameUrl=https%3A%2F%2Fv1b3dis.onrender.com%2F`,
+    text: `My Arbitrum VibeTrack today 🎵: ${vibe.tag} -> ${vibe.songTitle}\n${vibe.youtubeUrl}\nFind your wallet vibe: https://farcaster.xyz/miniapps/-0UGldhBkE4H/vibetrack`,
 
   });
 };
